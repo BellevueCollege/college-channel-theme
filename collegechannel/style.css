@@ -1,0 +1,115 @@
+/*
+ Theme Name:   College Channel (TinyFramework Child)
+ Theme URI:    https://github.com/BellevueCollege/college-channel-theme/
+ Description:  Tiny Framework Child Theme for CollegeChannel.tv
+ Author:       Bellevue College ITS
+ Author URI:   http://www.bellevuecollege.edu
+ Template:     tiny-framework
+ Version:      0.0.0.1
+ License:      GNU General Public License v3
+ License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+ Tags:         light, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  collegechannel
+*/
+
+/*
+ * Out of the box 'switches'
+ *
+ * Options provided by Tiny Framework to modify display and functionality.
+ *
+ */
+
+/* Tip30 - Uncomment next CSS block to hide entry meta section, located below the post (with author, categories, tags)
+ * in the Index page and archive listings.
+ */
+
+.list-view footer.entry-meta {
+	display: none;
+}
+
+.format-link footer.entry-meta,
+.format-status footer.entry-meta,
+.singular footer.entry-meta {
+	display: block;
+}
+.content-area article {
+	padding-bottom: 12px!important;
+	padding-bottom: 0.75rem!important;
+}
+
+#collegechannel-logo {
+	float: left;
+	max-width: 100%;
+	margin-top: 1em;
+}
+
+#site-title-wrapper {
+	display: none;
+}
+
+.widget-title {
+	color: #162155;
+	text-transform: none;
+	font-size: 1.25rem;
+	border-bottom: solid 1px #ccc;
+}
+
+/* Search */
+
+.site-header .search-form [type="submit"] {
+	display: none;
+}
+/* Hide top menu search in child themes for the mobile menu */
+.menu-item.menu-item-search {
+	display: none;
+}
+
+
+/*
+ * Custom code
+ *
+ * Homegrown styling, commence!
+ *
+ */
+
+/* Light search icon */
+.site-header .search-form [type="search"],
+.site-header .search-form [type="text"] {
+	background-image: url(img/icon-search-white.png);
+}
+
+/* Better spacing for improved font size */
+.menu-item.menu-item-search {
+	margin: 0.6rem 0 0 0;
+}
+
+
+@media screen and (min-width: 783px) {
+	/* Show top menu search in child themes for the full menu */
+	.menu-item.menu-item-search {
+		display: inline;
+	}
+
+	/* Update main menu color */
+	.main-navigation ul.nav-menu,
+	.main-navigation div.nav-menu > ul {
+		background: #162155;
+		padding: .1em 1em;
+		border-radius: 6px;
+		--webkit-border-radius: 6px;
+		--moz-border-radius: 6px;
+	}
+
+	.main-navigation ul.nav-menu a {
+		color: #fff;
+		text-transform: none;
+		font-size: 1.2em;
+	}
+	.main-navigation li ul li a {
+		background: #162155;
+	}
+
+}
+
+
+
