@@ -1,0 +1,195 @@
+
+/*
+ * Custom code
+ *
+ * Homegrown styling, commence!
+ *
+ */
+
+$primary-color: #20369c;
+
+ // TinyMCE styles
+body#tinymce {
+	background: #fff;
+	margin: 1em;
+}
+
+@media screen and (min-width: 783px) {
+	/* Show top menu search in child themes for the full menu */
+	.menu-item.menu-item-search {
+		display: inline;
+	}
+
+	/* Update main menu color */
+	.main-navigation ul.nav-menu,
+	.main-navigation div.nav-menu > ul {
+		background: $primary-color;
+		padding: .1em 1em;
+		border-radius: 6px;
+		--webkit-border-radius: 6px;
+		--moz-border-radius: 6px;
+	}
+
+	.main-navigation ul.nav-menu a {
+		color: #fff;
+		text-transform: none;
+		font-size: 1.2em;
+	}
+	.main-navigation li ul li a {
+		background: $primary-color;
+	}
+
+}
+
+/* Program styling from old system */
+
+#times #colorful td {
+	padding: 1em 1em;
+	border: 1px solid #666;
+	font-weight: bold;
+}
+
+#times td {
+	padding:.1em 1em;
+	border: 1px solid #666;
+}
+thead  th {
+	color:#FFF;
+	background:#333;
+}
+#times .odd {
+	background:#CCC;
+}
+#times .even {
+	background:#FFF;
+}
+
+#times .program1 {
+	background: #FF9;
+}
+#times .program2 {
+	background: #9FF;
+}
+#times .program3 {
+	background: #F9F;
+}
+#times .program4 {
+	background: #99F;
+}
+#times .program5 {
+	background: #F99;
+}
+#times .program6 {
+	background: #9F9;
+}
+#times .program7 {
+	background: #999;
+}
+#times .program8 {
+	background: #F94;
+}
+#times .program9 {
+	background: #FA9;
+}
+#times .program10 {
+	background: #A9F;
+}
+#times .program11 {
+	background: #F9F;
+}
+#times .program12 {
+	background: #AAF;
+}
+#times .program13 {
+	background: #FAA;
+}
+#times .program14 {
+	background: #F9A;
+}
+#times .program15 {
+	background: #F4F;
+}
+#times .program16 {
+	background: #AF9;
+}
+
+// Fix odd list spacing
+.entry-content ol ol,
+.entry-content ol ul,
+.entry-content ul ol,
+.entry-content ul ul {
+	margin: auto;
+}
+
+// Change color of menu items
+
+/* Styles for Categories and Pages widgets */
+.widget-area .widget_categories ul li,
+.widget-area .widget_nav_menu ul li {
+	text-transform: none;
+}
+.widget-area {
+	.widget .current-cat-parent  a,
+	.widget .current-cat-parent  a:visited,
+	.widget .current_page_parent a,
+	.widget .current_page_parent  a:visited,
+	.widget_categories a,
+	.widget_categories a:visited,
+	.widget_nav_menu a,
+	.widget_nav_menu a:visited {
+		color: $primary-color;
+	}
+	.widget_categories a:hover,
+	.widget_categories a:focus,
+	.widget .children li.cat-item a:hover,
+	.widget .children li.cat-item a:focus,
+	.widget .children li.page_item a:hover,
+	.widget .children li.page_item a:focus,
+	.widget_nav_menu a:hover,
+	.widget_nav_menu a:focus {
+		color: $primary-color;
+	}
+
+	.widget {
+		.current-cat .cat-item a,
+		.current-cat .cat-item a:visited,
+		.current-cat-parent .cat-item a,
+		.current-cat-parent .cat-item a:visited,
+		.current_page_item .page_item a,
+		.current_page_item .page_item a:visited,
+		.current_page_item a,
+		.current_page_item a:visited,
+		.current_page_parent .page_item a,
+		.current_page_parent .page_item a:visited {
+			color: #000;
+			font-weight: normal;
+		}
+		.current-cat,
+		.current-cat  a,
+		.current-cat  a:visited,
+		.current-cat-parent .current-cat,
+		.current-cat-parent .current-cat  a,
+		.current-cat-parent .current-cat  a:visited,
+		.current_page_item,
+		.current_page_item > a,
+		.current_page_item > a:visited,
+		.current_page_parent .current_page_item,
+		.current_page_parent .current_page_item  a,
+		.current_page_parent .current_page_item  a:visited {
+			color: $primary-color;
+			font-weight: bold;
+		}
+	}
+}
+
+// Hide title on home page
+.page-template-front-page header.entry-header {
+	display: none;
+}
+
+div.site-info {
+	max-width: 100%;
+	p {
+		display: inline;
+	}
+}
