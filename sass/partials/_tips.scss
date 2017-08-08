@@ -1,0 +1,62 @@
+
+/*
+ * Out of the box 'switches'
+ *
+ * Options provided by Tiny Framework to modify display and functionality.
+ *
+ */
+
+/* Tip14 - Custom logo feature support. Check: inc/template-tags.php for more details. */
+ /* Enable custom logo in mobile view */
+
+
+.site-branding {
+	margin-top: 12px;
+	margin-top: 0.75rem;
+}
+.site-logo-link,
+.custom-logo-link {
+	display: block;
+	float: left;
+	margin: 5px 24px 0 0;
+	margin: 0.3125rem 1.5rem 0 0;
+}
+#site-title-wrapper {
+	padding: 12px 0 12px 12px;
+	padding: 0.75rem 0 0.75rem 0.75rem;
+}
+.site-header .site-title,
+.site-header .site-title a {
+	clear: none;
+	display: inline;
+}
+.site-header .site-description,
+.site-header .site-title {
+	text-align: left;
+}
+
+
+/* Tip30 - Uncomment next CSS block to hide entry meta section, located below the post (with author, categories, tags)
+ * in the Index page and archive listings.
+ */
+
+.list-view footer.entry-meta {
+	display: none;
+}
+
+.format-link footer.entry-meta,
+.format-status footer.entry-meta,
+.singular footer.entry-meta {
+	display: block;
+}
+.content-area article {
+	padding-bottom: 12px!important;
+	padding-bottom: 0.75rem!important;
+}
+
+.widget-title {
+	color: #162155;
+	text-transform: none;
+	font-size: 1.25rem;
+	border-bottom: solid 1px #ccc;
+}
